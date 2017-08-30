@@ -1,1 +1,606 @@
+/* ============================================================================
+
+THIS IS THE CSS FILE FOR PORTFOLIO PROJECT OF VISIT_BEIJING CREATED BY Frank Li
+
+============================================================================ */
+
+/*---------------------------------------------------------------------
+                        WEBSITE COLOUR SCHEME
+---------------------------------------------------------------------*/
+
+/*First colour: rgba(195, 168, 255, 1);
+Secondary colour: rgba(48, 182, 184, 1); 
+Third colour: rgba(55, 42, 71, 1); - variations of opacity to the main colour
+Fourth colour: #444; for main content text and headings*/
+
+
+/*---------------------------------------------------------------------
+                        MOBILE DEFAULT STYLES - GLOBAL STYLES
+---------------------------------------------------------------------*/
+
+/* Prevents adjustments of font size after orientation change in IE on Windows phone and in IOS */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box model layout to all elements */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* clearfix: Force an element not to collapse */
+.clearfix: after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* All images, video and table set to 100% width of their parent container */
+img, video, table {
+    width: 100%;
+}
+
+body {
+    font-family: 'Ek Mukta', sans-serif;
+    font-size: 16px;
+    color: #444;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*-------------------------------------*/
+
+
+.container {
+    width: 86%;
+    height: 100%;
+    margin: 100px auto;
+}
+
+.detailContainer {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detailDiv {
+    width: 86%;
+}
+
+h2 {
+    text-align: center;
+}
+
+figure {
+    margin: 1em 5px;
+}
+
+.textDetail {  
+    font-size: 0.8em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.pMain, .textMain {
+    font-size: 0.9em;
+}
+
+.pDetail, .textDetail {
+    font-size: 0.8em;
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.articleBody {
+/*    position: relative;*/
+    font-size: 20px;
+    line-height: 1.15;
+    width: 86%;
+}
+
+.articleBody>p:first-of-type {
+    font-family: 'Chewy', cursive;
+}
+
+.lightbg {
+    background-color: rgba(244, 244, 244, 0.6);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------------
+                        THE HOME STYLES
+---------------------------------------------------------------------*/
+
+.homebg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+    background-image: url(../images/bg-badalinggreatwall.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    border-bottom: 5px solid rgba(120, 138, 41, 0.8); 
+}  
+
+.logo {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    width: 90px;
+    z-index: 110;
+    position: fixed;
+}
+
+.nav {
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: rgba(48, 182, 184, 1);
+    position: fixed;
+    border-bottom: 2px solid rgba(194, 166, 255, 0.2);
+    z-index: 100;
+}
+
+ul.menu-items {
+    padding-left: 0;
+    margin: 0;
+}
+
+nav li a, nav li {
+    color: white;    
+    opacity: 1;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    float: none;
+    display: block;
+    outline-style: none !important;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: rgba(0, 0, 255, 1);
+}
+    
+/*&#9776; this is the code for 3 bar menu*/
+.navBtn  {
+    font-size: 2.5em;
+    display: block;
+    width: 20%;
+    margin: 0 4vw 0 73vw; 
+    padding: 7px 3%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-items a {
+
+    padding: 15px 5vw 15px 0;
+    color: white;
+    text-align: right;
+}
+
+.menu-items li {
+
+    border-top: 3px solid rgba(194, 166, 255, 0.2); 
+}
+
+.menu-items {
+    display: none;
+}
+
+.slogan {
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 3px;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: right;
+    padding: 150px 4vw 0 0;
+    color: rgb(236, 105, 65); /*ec6941*/
+ }
+
+.worldattractionbtndiv a {
+    z-index: 50;
+    text-decoration: none;
+}
+
+.worldattractionbtn {  
+    color: cornsilk;
+    padding: 15px 20px;
+    display: block;
+    margin: 41vh auto 15vh auto;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px solid rgba(160, 255, 255, 0.5);
+    background-color: rgba(111, 111, 56, 0.2);
+    cursor: pointer;
+    outline: none;
+    
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    
+}
+
+/*glow*//*#88639a*/
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #888, 0 0 20px #888, 0 0 30px #888, 0 0 40px #f8f834, 0 0 70px #f8f834, 0 0 80px #f8f834, 0 0 100px #f8f834, 0 0 150px #f8f834;
+  }
+  to {
+    text-shadow: 0 0 5px #888, 0 0 10px #888, 0 0 15px #888, 0 0 20px #f8f834, 0 0 35px #f8f834, 0 0 40px #f8f834, 0 0 50px #f8f834, 0 0 75px #f8f834;/*88639a*/
+  }
+}
+
+
+
+/*glow for mozilla*/
+
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #888, 0 0 20px #888, 0 0 30px #888, 0 0 40px #1177FF, 0 0 70px #1177FF, 0 0 80px #1177FF, 0 0 100px #1177FF, 0 0 150px #1177FF;
+  }
+  to {
+    text-shadow: 0 0 5px #888, 0 0 10px #888, 0 0 15px #888, 0 0 20px #1177FF, 0 0 35px #1177FF, 0 0 40px #1177FF, 0 0 50px #1177FF, 0 0 75px #1177FF;
+  }
+}
+
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #888, 0 0 20px #888, 0 0 30px #888, 0 0 40px #1177FF, 0 0 70px #1177FF, 0 0 80px #1177FF, 0 0 100px #1177FF, 0 0 150px #1177FF;
+  }
+  to {
+    text-shadow: 0 0 5px #888, 0 0 10px #888, 0 0 15px #888, 0 0 20px #1177FF, 0 0 35px #1177FF, 0 0 40px #1177FF, 0 0 50px #1177FF, 0 0 75px #1177FF;
+  }
+}
+
+/*---------------------------------------------------------------------
+                        THE ABOUT STYLES
+---------------------------------------------------------------------*/
+
+.districtimg {
+    text-align: center;
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+}
+
+tr:nth-child(even) {
+    color: #333;
+    background: #f0f0f0;
+}
+
+td {
+    padding: 5px 5px;
+}
+
+.floatleft {
+    float: left;
+    padding-right: 10px;
+}
+
+.weather {
+    margin-left: 10%;
+}
+
+.weatherimg {
+    width: 50px;
+}
+
+.hightemp {
+    color: rgba(255, 0, 0, 1);
+}
+
+.lowtemp {
+    color: rgba(0, 0, 255, 1);
+}
+
+.avgtemp {
+    margin: 5px auto;
+    width: 80%;
+}
+
+/*---------------------------------------------------------------------
+                        THE ATTRACTIONS STYLES
+---------------------------------------------------------------------*/
+
+figcaption {
+    color: #333;
+    background: #f0f0f0;
+    padding: 5px 5px;
+    font-family: ScoutBold,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.textLevel {
+    font-style: italic;
+    color: coral;
+}
+
+/*---------------------------------------------------------------------
+                        THE ACCOMMADATION STYLES
+---------------------------------------------------------------------*/
+
+.addressAccom {
+    font-size: 0.8em;
+}
+
+/*---------------------------------------------------------------------
+                        THE TRANSPORTATION STYLES
+---------------------------------------------------------------------*/
+
+.detailTrans {
+    width: 86%;
+}
+
+/*---------------------------------------------------------------------
+                        THE CONTACT STYLES
+---------------------------------------------------------------------*/
+
+#contact {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+    background-image: url(../images/bg-contact-summerp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: rgba(119, 74, 31, 1);
+    text-shadow: 1px 1px 1px rgba(255, 224, 255, 1);
+}
+
+#contact a {
+    color: rgba(119, 74, 31, 1);
+}
+
+.medium-icon {
+    font-size: 32px;
+}
+
+.contentright {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.wrapCtrl {
+    margin-bottom: 10px;
+    text-align: right;
+    width: 100%;
+}
+
+.form-control {
+    display:block;
+    width:100%;
+    height:34px;
+    padding:6px 12px;
+    font-size:14px;
+    line-height:1.42857143;
+    color:#555;
+    background-color:#fff;
+    background-image:none;
+    border:1px solid #ccc;
+    border-radius:4px;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+
+.form-control:focus {
+    border-color:#66afe9;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.form-control::-moz-placeholder {
+    color:#999;
+    opacity:1
+}
+
+.form-control:-ms-input-placeholder {
+    color:#999
+}
+
+.form-control::-webkit-input-placeholder {
+    color:#999
+}
+
+.form-control[disabled], .form-control[readonly],fieldset[disabled] .form-control {
+    background-color:#eee;
+    opacity:1
+}
+
+.form-control[disabled],fieldset[disabled] .form-control {
+    cursor:not-allowed
+}
+
+textarea.form-control {
+    height:auto
+}
+
+.submitctrl {
+    max-width: 360px;
+    background-color: rgba(48, 182, 184, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------------------
+                        THE FOOTER STYLES
+---------------------------------------------------------------------*/
+
+.footer {
+    text-align: center;
+/*    font-style: italic;*/
+    font-size: 0.8em;
+    color: rgba(128, 128, 128, 1);
+}
+
+/*---------------------------------------------------------------------
+                 MOBILE STYLES - 568 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 568px) {
+    .slogan {
+        padding: 100px 4vw 0 0;
+    }
+    .worldattractionbtn {
+        margin-right: 4vw;
+    }
+    .homebg {
+        height: 100vh;
+    }
+}
+
+/*---------------------------------------------------------------------
+                 TABLET STYLES - 768 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 768px) {
+	.detailContainer {
+        column-count: 2;
+    }
+    .detailDiv {
+        width: 46%;
+    }
+    .articleBody {
+        width: 46%;
+    }
+    .detailTrans {
+        width: 46%;
+    }
+    .homebg {
+        height: auto;
+    }
+}
+
+
+
+
+/*---------------------------------------------------------------------
+                 DESKTOP STYLES - 1024 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1024px) {
+	.navBtn {
+        display: none;
+    }
+    .menu-items {
+        display: inline;
+    }
+    .articleBody {
+        width: 24%;
+    }
+    .detailTrans {
+        width: 31%;
+    }
+    .homebg {
+        height: 100vh;  
+    }
+    .logo {
+        width: 8%;
+        height: auto;
+        position: absolute;
+        top: 10vh;
+        left: 5vw;
+        z-index: 300;
+    }
+    
+    .nav {
+/*        background-color: rgba(44, 31, 61, 0.95);*/
+        border-bottom: none;
+        text-align: right;
+        padding: 10px 0;
+    }
+    
+    nav a {
+        font-size: 0.7em;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+        font-weight: lighter;
+        transition: all 0.5s ease;
+    }
+    nav a:hover {
+        color: rgba(194, 166, 255, 1)
+    }
+    
+    .menu-items a {
+        padding: 0 20px;
+        margin: 0 5px;
+        text-align: center;
+        width: 10%;
+        display: inline;
+    }
+    
+    .menu-items li {
+        border-top: none; 
+        display: inline;
+    }
+    .worldattractionbtndiv {
+        position: absolute;
+        top: 75vh;
+        left: 3vw; 
+    }
+    .worldattractionbtn {
+        margin: 2vh auto 15vh auto;        
+    }
+    .slogan {
+        font-size: 3em;
+        position: absolute;
+        top: 35vh;
+        right: 8vw;
+     }
+    .formContainer {
+        width: 60%;
+        float: left;
+        height: auto;
+        margin-top: 25px;
+    }
+    .send:hover {
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(55, 42, 71, 0.5);
+    }
+    .inputFields:focus, .inputMessage:focus {
+        /*box-shadow: inset 0 1px 1px rgba(255,255,255,.075);*/
+        -webkit-box-shadow: inset 0 1px 1px rgb(43, 30, 59), 0 0 8px rgb(212, 210, 208);
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+        background-color: red;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+}
 
