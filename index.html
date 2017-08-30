@@ -1,0 +1,523 @@
+<!-- ============================================================================
+
+THIS IS A HAND CODED PROJECT FOR PORTFOLIO DESIGNED AND CREATED BY Frank Li
+
+============================================================================ -->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Travel In BEIJING</title>
+        <meta charset="utf-8">
+        <!-- TELLS MOBILE PHONES NOT TO LIE ABOUT THEIR TRUE WIDTH -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Chewy" rel="stylesheet">
+        <!-- FONT ET-LINE ICONS -->
+        <link rel="stylesheet" href="css/et-line-font.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <!-- CSS RESET NORMALIZE -->
+        <link href="css/Normalizer.css" rel="stylesheet" type="text/css">
+        <!-- MY OWN CSS -->
+        <link href="css/myStyle.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+            
+        <!-- HOME SECTION ================================================== -->
+        
+        <section id="home" class="homebg">
+            <header>
+
+                <div>
+                    <div class="logo">
+                        <a href="#home"><img src="images/logo.png" alt="Visit Beijing logo" /></a>
+                    </div>
+
+        <!-- NAVIGATION SECTION =========================================== -->
+                    
+                    <div class="nav">
+                        <span class="navBtn">&#9776;</span>
+                        <nav>
+                            <ul id="mainMenu" class="menu-items">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#attractions">Attractions</a></li>
+                                <li><a href="#accomadation">Accomadation</a></li>
+                                <li><a href="#restaurant">Restaurant</a></li>
+                                <li><a href="#transportation">Transportation</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+        <!-- NAVIGATION SECTION ENDS ==================================== -->
+                    
+                    <div class="slogan">WELCOME To<br>Oriental Culture</div>
+                    <div class="worldattractionbtndiv">
+                        <a href="#attractions"><button class="worldattractionbtn">WORLD-RENOWNED<br>ATTRACTIONS
+                        </button></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+   
+        <!-- HOME SECTION ENDS ========================================= -->  
+        
+        <!-- ABOUT SECTION ============================================= -->
+        
+        <section id="about">
+            <div class="container">
+                <h1>About Beijing</h1>
+                <p class="pMain wow fadeInUp" data-wow-delay="0.6s">Beijing, the Capital of China, has become an international cosmopolis. The metropolis is governed as a direct-controlled municipality under the national government, with more than <b>20 million</b> population and <b>16</b> urban and suburban districts covering <b>16,410.54</b> Square Kilometers.</p>
+
+                <div class="detailContainer">
+                    <!-- Districts -->
+
+                    <div class="detailDiv">
+                        <h2>Districts</h2>
+                        <div>
+                            <div class="districtimg wow rollIn"><img src="images/districts.gif" alt="Districts" /></div>
+                            <div>
+                                <table class="textDetail wow lightSpeedIn" data-wow-delay="0.5s">
+                                    <tr><td>1. Dongcheng District</td><td>2. Xicheng District</td></tr>
+                                    <tr><td>3. Chaoyang District</td><td>4. Haidian District</td></tr>
+                                    <tr><td>5. Fengtai District</td><td>6. Shijingshan District</td></tr>
+                                    <tr><td>7. Fangshan District</td><td>8. Mentougou District</td></tr>
+                                    <tr><td>9. Tongzhou District</td><td>10.Shunyi District</td></tr>
+                                    <tr><td>11.Huairou District</td><td>12.Miyun District</td></tr>
+                                    <tr><td>13.Pinggu District</td><td>14.Daxing District</td></tr>
+                                    <tr><td>15.Changping District</td><td>16.Yanqing District</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Districts Ends -->
+
+                    <!-- Weather and Climate -->
+
+                    <div class="detailDiv">
+                        <h2>Weather and Climate</h2>
+                        <div>
+                            <div>
+                                <div>
+                                    <h4>Today&nbsp;<span id="today"></span></h4>
+                                    <div id="weatherToday" class="weather textMain wow pulse" data-wow-iteration="3" data-wow-duration="0.15" >
+                                        <!-- Get Today's Weather Forcast From Open Weather API -->
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Average Temperatures</h4>
+                                    <div>
+                                        <table class="avgtemp textDetail wow lightSpeedIn" data-wow-delay="0.5s">
+                                            <tr><td>Spring:</td><td>1&#8451; - 12&#8451;</td></tr>
+                                            <tr><td>Summer:</td><td>18&#8451; - 29&#8451;</td></tr>
+                                            <tr><td>Autumn:</td><td>15&#8451; - 25&#8451;</td></tr>
+                                            <tr><td>Winter:</td><td>-5&#8451; - 5&#8451;</td></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" wow fadeInUp" data-wow-delay="0.5s">
+                                <p class="pMain">Beijing has a rather dry, monsoon-influenced humid continental climate, characterized by hot, humid summers, and generally cold, windy, dry winters. Spring can bear witness to sandstorms blowing in from the Mongolian steppe, accompanied by rapidly warming, but generally dry conditions. Autumn, like spring, sees little rain, but is crisp and short.</p>
+                                <p class="pMain">The monthly daily average temperature in January is −3.7&#8451;, while in July it is 26.2&#8451;. Precipitation averages around 570 mm (22.4 in) annually, with close to three-fourths of that total falling from June to August. Extremes have ranged from −27.4&#8451; to 42.6&#8451;.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weather and Climate Ends -->
+
+                    <!-- History -->
+
+                    <div class="detailDiv">
+                        <h2>History</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.8s">
+                            <p class="pMain">Up to now, there has been a recorded history of over 3000 years and it has developed prosperously. Evidence of human ancestry dating back to 700,000 years ago has been found in such places as Zhoukoudian in the southwest part of Beijing, where the remains known as 'Peking Man' were found.</p>
+                            <p class="pMain">While the city's origins can be traced back to over 2,000 years ago, its true significance came about in the early years of the Western Zhou Dynasty (11th century BC-771 BC). During this time the emperor gave the feudal lords under his rule plots of land. One of these plots of land (or feod), called 'Ji City', was the capital of the kingdom 'Ji' at that time. This city was the earliest in Beijing history. By the time of the Eastern Zhou Period (476 BC-221 BC), the kingdom Ji no longer existed, being replaced by the kingdom 'Yan'. However, Ji was still the capital city at that time.</p>
+                            <p class="pMain">From the time the Emperor Qin Shi Huang unified China in the year 221 BC, Beijing became a strategic place and local kaiserdom center in the northern part of China. From the year 581 to 618 (Sui Dynasty), Beijing was called 'Zhuo' and had a population of 130,000 people. From 618 to 907 (Tang Dynasty), Beijing was called 'You'. During these two dynasties, it was not only a strategic military place but also the major trade center.</p>
+                            <p class="pMain">In the year 938 of Liao Dynasty (916-1125), the city became the alternate capital of the kingdom of 'Liao' which was founded by the minority ethnic group Qidan who lived in the northeast of China. Because Beijing of that time was located in the south part of their kingdom, it was renamed 'Nanjing' (in Chinese, 'Nan' means 'in the south place').</p>
+                        </div>
+                    </div>
+
+                    <!-- History Ends -->
+
+                    <!-- Business Hours -->
+
+                    <div class="detailDiv">
+                        <h2>Business Hours</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.5s">
+                            <h4>Public Holidays</h4>
+                            <p class="pMain">There are <span class="textBold">7</span> public holidays in a year in China, including New Year's Day, Spring Festival, Qingming Festival, May Day, Dragon Boat Festival, Mid-Autumn Festival and National Day. At the festivals, all Chinese people will be on vacation.</p>
+                            <h4>Banks</h4>
+                            <p class="pMain">Chinese Banks are open daily throughout the week from <span class="textBold">9:00</span> - <span class="textBold">17:00</span>.</p>
+                            <h4>Pharmacies</h4>
+                            <p class="pMain">Most Chinese Chemists normally keep shops hours opening from <span class="textBold">9:00</span> - <span class="textBold">17:00</span> whiles some are always remain opened <span class="textBold">24 hours</span>.</p>
+                            <h4>Hospitals</h4>
+                            <p class="pMain">Hospitals in Beijing are operated between the hours of <span class="textBold">7:00</span> - <span class="textBold">17:00</span>, whilst emergency is <span class="textBold">24 hours</span>.</p>
+                            <h4>Post office</h4>
+                            <p class="pMain">Daily between the hours of <span class="textBold">9:00</span> - <span class="textBold">17:00</span>.</p>
+                            <h4>Shopping Malls</h4>
+                            <p class="pMain">Shopping malls, stores and supermakets usually opens daily from <span class="textBold">9:00</span> - <span class="textBold">21:00</span>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours Ends -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- ABOUT SECTION ENDS ======================================== -->  
+        
+        <!-- ATTRACTIONS SECTION ======================================= -->
+        
+        <section id="attractions" class="lightbg">
+            <div class="container">
+                <h1>Attractions</h1>
+                <div class="detailContainer">
+                    <div class="articleBody">
+                        <figure data-wow-delay="0.5s" class="wow bounceInDown">
+                            <img src="images/attraction/thetempleofheaven.jpg" alt="The Temple of Heaven" />
+                            <figcaption class="pDetail">The Temple of Heaven <span class="textLevel textDetail">AAAAA</span></figcaption>
+                        </figure>
+                        <p class="pMain">The Temple of Heaven is the largest and most representative existing masterpiece among China’s ancient sacrificial buildings.</p>
+                        <p class="pDetail">Address: No. 1, Tiantan Road, Dongcheng District, Beijing.</p>
+                    </div>
+
+                    <div class="articleBody">
+                        <figure data-wow-delay="0.7s" class="wow bounceInDown">
+                            <img src="images/attraction/thepalacemuseum.jpg" alt="The Palace Museum" />
+                            <figcaption class="pDetail">The Palace Museum <span class="textLevel textDetail">AAAAA</span></figcaption>
+                        </figure>
+                        <p class="pMain">The Palace Museum, also called The Forbidden City, was the seat of Imperial power for 500 years, and it is now one of the major tourist attractions in China.</p>
+                        <p class="pDetail">Address: No. 4 Jingshan Front Street, Dongcheng District, Beijing.</p>
+                    </div>
+
+                    <div class="articleBody">
+                        <figure data-wow-delay="0.9s" class="wow bounceInDown">
+                            <img src="images/attraction/badalinggreatwall.jpg" alt="Badaling Great Wall" />
+                            <figcaption class="pDetail">Badaling Great Wall <span class="textLevel textDetail">AAAAA</span></figcaption>
+                        </figure>
+                        <p class="pMain">Badaling Great Wall was officially opened to tourists in 1958. It was the earliest section of the Great Wall to be opened to tourists and receives the largest number of visitors.</p>
+                        <p class="pDetail">Address: In the southwestern part of Yanqing District, Beijing.</p>
+                    </div>
+
+                    <div class="articleBody">
+                        <figure data-wow-delay="1.1s" class="wow bounceInDown">
+                            <img src="images/attraction/thesummerpalace.jpg" alt="The Summer Palace" />
+                            <figcaption class="pDetail">The Summer Palace <span class="textLevel textDetail">AAAAA</span></figcaption>
+                        </figure>
+                        <p class="pMain">Being the largest and most well preserved royal park in China, The Summer Palace greatly influences Chinese horticulture and landscaping with its famous natural vistas and points of cultural interest.</p>
+                        <p class="pDetail">Address: No. 19, Xinjiangongmen Road, Haidian District, Beijing.</p>
+                    </div>
+
+                    <div class="articleBody">
+                        <figure data-wow-delay="0.5s" class="wow bounceInDown">
+                            <img src="images/attraction/princegongsmansion.jpg" alt="Prince Gong's Mansion" />
+                            <figcaption class="pDetail">Prince Gong's Mansion <span class="textLevel textDetail">AAAAA</span></figcaption>
+                        </figure>
+                        <p class="pMain">Prince Gong's Mansion is the most well preserved mansion in Beijing.</p>
+                        <p class="pDetail">Address: No. 17, Qianhaixi Street, Xicheng District, Beijing.</p>
+                    </div>
+
+                    <div class="articleBody">
+                        <figure data-wow-delay="0.7s" class="wow bounceInDown">
+                            <img src="images/attraction/nationalmuseum.jpg" alt="National Museum" />
+                            <figcaption class="pDetail">National Museum</figcaption>
+                        </figure>
+                        <p class="pMain">The National Museum of China is located to the east of Tiananmen Square and south of Chang an Street, opposite to the Great Hall of the People.</p>
+                        <p class="pDetail">Address: East of Tiananmen Square, No. 16, East Changan Avenue, Dongchang District, Beijing.</p>
+                    </div>
+
+                    <div class="articleBody">
+                        <figure data-wow-delay="0.9s" class="wow bounceInDown">
+                            <img src="images/attraction/nationalstadium.jpg" alt="National Stadium" />
+                            <figcaption class="pDetail">National Stadium</figcaption>
+                        </figure>
+                        <p class="pMain">National Stadium, also called Birds' Nest, is the main stadium of the 29th Summer Olympic Games, located in the central area of Beijing Olympic Park, covers an area of 20.4 hectares, can accommodate 9.1 million people. </p>
+                        <p class="pDetail"Address: Inside Olympic Park, Beichen Zhonglu, Chaoyang District, Beijing.</p>
+                    </div>
+
+                    <div class="articleBody">
+                        <figure data-wow-delay="1.1s" class="wow bounceInDown">
+                            <img src="images/attraction/tsinghuauniversity.jpg" alt="Tsinghua University" />
+                            <figcaption class="pDetail">Tsinghua University</figcaption>
+                        </figure>
+                        <p class="pMain">Tsinghua University was established in 1911, originally under the name “Tsinghua Xuetang”. The University has now over 25,900 students, including 13,100 undergraduates and 12,800 graduate students. </p>
+                        <p class="pDetail">Address: No. 30, Shuangqing Road, Haidian District, Beijing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ATTRACTIONS SECTION ENDS ================================== -->  
+        
+        <!-- ACCOMADATION SECTION ====================================== -->
+        
+        <section id="accomadation">
+            <div class="container">
+                <h1>Accommadation</h1>
+                <div class="detailContainer">
+                    <div class="detailDiv">
+                        <h4>Graceland Yard</h4>
+                        <p class="addressAccom">Address: Jia 9 Zhengjue Hutong, Xicheng District, Beijing</p>
+                        <p>
+                            <img src="images/accommadation/gracelandyard.jpg" alt="Graceland Yard" />
+                            <span class="textBold">BusinessTime</span><br/><span>Check-in: from 14:00; Check-out: before 12:00<br/></span>
+                            <span class="textBold">Facilities</span><br/><span>Wi-Fi: Yes<br/>Parking: Yes<br/></span>
+                            <span class="textBold">Telephone</span><br/><span>+86 10 83288366</span>
+                        </p>
+                    </div>
+                    <div class="detailDiv">
+                        <h4>Citycourt Hotel</h4>
+                        <p class="addressAccom">Address: No.14 Liulisi Hutong, Dongcheng District, Beijing</p>
+                        <p>
+                            <img src="images/accommadation/citycourthotel.jpg" alt="Citycourt Hotel" />
+                            <span class="textBold">BusinessTime</span><br/><span>Check-in: 12:00 - 00:00; Check-out: 12:00 - 13:00<br/></span>
+                            <span class="textBold">Facilities</span><br/><span>Wi-Fi: Yes<br/>Parking: Yes<br/></span>
+                            <span class="textBold">Telephone</span><br/><span>+86 10 64026396</span>
+                        </p>
+                    </div>
+                    <div class="detailDiv">
+                        <h4>Hutong Inn Beijing</h4>
+                        <p class="addressAccom">Address: No.17 Zhangwang Hutong, Jiu Gulou Street, Dongcheng District, Beijing</p>
+                        <p>
+                            <img src="images/accommadation/hutonginnbeijing.jpg" alt="Hutong Inn Beijing" />
+                            <span class="textBold">BusinessTime</span><br/><span>24 hours<br/></span>
+                            <span class="textBold">Facilities</span><br/><span>Wi-Fi: Yes<br/>Parking: Yes<br/></span>
+                            <span class="textBold">Telephone</span><br/><span>+86 10 64031173</span>
+                        </p>
+                    </div>
+                    <div class="detailDiv">
+                        <h4>Xuyard Hotel</h4>
+                        <p class="addressAccom">Address: No.59 Xinjiekou East Street, Xicheng District, Beijing</p>
+                        <p>
+                            <img src="images/accommadation/xuyardhotel.jpg" alt="Xuyard Hotel" />
+                            <span class="textBold">BusinessTime</span><br/><span>Check-in: from 14:00; Check-out: before 12:00<br/></span>
+                            <span class="textBold">Facilities</span><br/><span>Wi-Fi: Yes<br/>Parking: No<br/></span>
+                            <span class="textBold">Telephone</span><br/><span>+86 10 66162026</span>
+                        </p>
+                    </div>
+                    <div class="detailDiv">
+                        <h4>Hilton Beijing Wangfujing</h4>
+                        <p class="addressAccom">Address: No.8 East Wangfujing Street, Dongcheng District, Beijing</p>
+                        <p>
+                            <img src="images/accommadation/hiltonbeijingwangfujing.jpg" alt="Hilton Beijing Wangfujing" />
+                            <span class="textBold">BusinessTime</span><br/><span>Check-in: from 15:00; Check-out: before 12:00<br/></span>
+                            <span class="textBold">Facilities</span><br/><span>Wi-Fi: Yes<br/>Parking: Yes<br/></span>
+                            <span class="textBold">Telephone</span><br/><span>+86 10 58128888</span>
+                        </p>
+                    </div>
+                    <div class="detailDiv">
+                        <h4>Capital Hotel</h4>
+                        <p class="addressAccom">Address: No.3 East Qian Men Street, Dongcheng District, Beijing</p>
+                        <p>
+                            <img src="images/accommadation/capitalhotel.jpg" alt="Capital Hotel" />
+                            <span class="textBold">BusinessTime</span><br/><span>Check-in: from 14:00; Check-out: before 12:00<br/></span>
+                            <span class="textBold">Facilities</span><br/><span>Wi-Fi: Yes<br/>Parking: Yes<br/></span>
+                            <span class="textBold">Telephone</span><br/><span>+86 10 51666064</span>
+                        </p>
+                    </div>
+                    <div class="detailDiv">
+                        <h4>Ibis Hotel (Sanyuan Bridge)</h4>
+                        <p class="addressAccom">Address: Building 17, A5 Shuguangxili Community, Chaoyang District, Beijing</p>
+                        <p>
+                            <img src="images/accommadation/ibishotelsanyuanbridge.jpg" alt="Ibis Hotel (Sanyuan Bridge)" />
+                            <span class="textBold">BusinessTime</span><br/><span>Check-in: from 14:00; Check-out: before 12:00<br/></span>
+                            <span class="textBold">Facilities</span><br/><span>Wi-Fi: Yes<br/>Parking: Yes<br/></span>
+                            <span class="textBold">Telephone</span><br/><span>+86 10 58296999</span>
+                        </p>
+                    </div>
+                    <div class="detailDiv">
+                        <h4>Pinganfu Hotel</h4>
+                        <p class="addressAccom">Address: No.100 Dongsishitiao, Dongcheng District, Beijing</p>
+                        <p>
+                            <img src="images/accommadation/pinganfuhotel.jpg" alt="Pinganfu Hotel" />
+                            <span class="textBold">BusinessTime</span><br/><span>Check-in: from 12:00; Check-out: before 12:00<br/></span>
+                            <span class="textBold">Facilities</span><br/><span>Wi-Fi: Yes<br/>Parking: Yes<br/></span>
+                            <span class="textBold">Telephone</span><br/><span>+86 10 51666064</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ACCOMADATION SECTION ENDS ================================= -->  
+        
+        <!-- RESTAURANT SECTION ============================================== -->
+        
+        <section id="restaurant" class="lightbg">
+            <div class="container">
+                <h1>Restaurant</h1>
+                <div>
+                    <div>
+                        <p class="pMain wow fadeInUp">As for Beijing Cuisine, people also call it the Capital City cuisine. Beijing was the capital city for the Liao, Jin, Yuan, Ming, and Qing dynasties. Except for the Ming Dynasty, all the rulers of these dynasties were from northern nomadic tribes. </p>
+                        <p class="pMain wow fadeInUp">For those 500-plus years, the dishes available from Beijing's catering trade were dominated by meat dishes, which corresponded to the eating habits of the ruling class. The Mongolian rulers of the Yuan Dynasty were especially fond of mutton, and 80% of the dishes in their palace were made of mutton. These mutton dishes still are made today, such as stewed mutton, instant – boiled mutton, quick – fried mutton tripe, and fried dumplings with minced mutton. </p>
+                        <p class="pMain wow fadeInUp">The Qing Dynasty rulers ate pork before moving to Beijing from Shenyang in northeastern China. Their cooking methods were stewing, roasting, and boiling. Pork and mutton have been equally represented in Beijing cuisine since the Qing Dynasty as a result of the dietetic influence of the Manchus. Roast and stewed pig, pork dishes, and pig's offal stewed in ceramic pots offered by the Shaguoju Restaurant (ceramic pots restaurant) were the first to be offered to suit the eating preferences of the Manchus. Gradually these dishes were accepted by the residents of Beijing.</p>
+                    </div>
+                    <div class="detailContainer">
+                        <div class="articleBody">
+                            <h4>Quanjude</h4>
+                            <figure class="wow fadeInLeft" data-wow-delay="0.5s">
+                                <img src="images/restaurant/quanjude.jpg" alt="Quanjude Restaurant" />
+                                <figcaption>Quanjude Restaurant</figcaption>
+                            </figure>
+                            <p class="pMain">Specialties: Mustard duck web, boiled duck liver, seasoned duck gizzard, hot and spicy shredded duck wing, crystal duck delicacy, quick-fried duck heart, dry-fried four delicacies</p>
+                            <p class="pDetail">Address: 32 Qianmen Street, Dongcheng District, Beijing</p>
+                            <p class="pDetail">Telephone: +86 10 65112418</p>
+                        </div>
+                        
+                        <div class="articleBody">
+                            <h4>Donglaishun</h4>
+                            <figure class="wow fadeInRight" data-wow-delay="0.8s">
+                                <img src="images/restaurant/donglaishun.jpg" alt="Donglaishun Muslim Restaurant" />
+                                <figcaption>Donglaishun Muslim Restaurant</figcaption>
+                            </figure>
+                            <p class="pMain">Founded in 1903, Donglaishun Muslim Restaurant is a time-honored tourist dining place in Beijing. </p>
+                            <p class="pDetail">The restaurant is famous for its traditional flavor Instant-boiled Mutton hotpot. The restaurant selects the freshest mutton and cuts into paper-like slices, then serves it with special seasonings to offer you the best mutton cuisine.</p>
+                            <p class="pDetail">To cater for the different needs of customers, the restaurant also offers traditional Muslim dishes and other specialties, such as roast duck, quick-fried mutton with onions, grilled mutton kebabs and roast leg of lamb. Enjoying food in this restaurant will be a great experience during your Beijing tour.</p>
+                            <p class="pDetail">Address: No.198 Wangfujing Street, Dongcheng District, Beijing</p>
+                            <p class="pDetail">Telephone: +86 10 65139661</p>
+                        </div>
+                        
+                        <div class="articleBody">
+                            <h4>Baoyuan Dumpling</h4>
+                            <figure class="wow fadeInLeft" data-wow-delay="0.5s">
+                                <img src="images/restaurant/baoyuandumpling.jpg" alt="Baoyuan Dumpling" />
+                                <figcaption>Baoyuan Dumpling</figcaption>
+                            </figure>
+                            <p class="pMain">Baoyuan Dumpling (Baoyuan Jiaozi Wu) is a dumpling heaven. Baoyuan serves traditional boiled dumplings with dozens of fresh stuffings which are sorted by type of meat and vegetable.</p>
+                            <p class="pDetail">Address: North of 6 Maizidian Street, Chaoyang District, Beijing</p>
+                            <p class="pDetail">Telephone: +86 10 65864967</p>
+                        </div>
+                        
+                        <div class="articleBody">
+                            <h4>Gui Street</h4>
+                            <figure class="wow fadeInRight" data-wow-delay="0.8s">
+                                <img src="images/restaurant/guistreet.jpg" alt="Gui Street" />
+                                <figcaption>Gui Street</figcaption>
+                            </figure>
+                            <p class="pMain">Local snacks are a special feature of Beijing. Tourists can taste not only the local Beijing flavors, but those of other regions as well. Snack-stalls in the night markets are always popular and busy destinations.</p>
+                            <p class="pDetail">Most restaurants in the street are open around the clock. If you are a night owl, Gui Street in Dongzhi Gate, is a good place to spend until the wee hours of the morning. The late hours of the night are usually the busiest times on this street, whose specialty is Spicy Lobster.</p>
+                            <p class="pDetail">Picture yourself sitting in an old chair inside an ancient courtyard house under the grapevines appreciating photos from long-ago but most important savor the aroma and taste of the succulent dishes.</p>
+                            <p class="pDetail">Address: Dongzhimennei Dajie, Dongcheng District, Beijing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- RESTAURANT SECTION ENDS ========================================= -->  
+        
+        <!-- TRANSPORTATION SECTION ==================================== -->
+        
+        <section id="transportation">
+            <div class="container">
+                <h1>Transportation</h1>
+                <div class="detailContainer">
+                    <div class="detailTrans">
+                        <h4>Taxi</h4>
+                        <p class="wow bounceInUp"><img src="images/transportation/taxi.jpg" alt="Taxi" /></p>
+                        <p>Taxis in Beijing are plentiful, affordable and well-managed thanks to the unified management. You can easily find taxis on the road.</p>
+                        <p>Taxis in Beijing are colorful, yellow body, dark blue, green or purple car roof. The logos of taxi companies are printed on the vehicle door and the top light box of the taxi. Different from taxis in other city, the taxis in Beijing don’t have a transparent shield around the driver's seat. A taximeter is placed over the console. The taxi drivers in Beijing are real warm-hearted although they are not good at English. Hence, it would be better to write down or print the destination in Chinese to show them.</p>
+                        <p>You can call +86 10 96103 for taxi service.</p>
+                    </div>
+                          
+                    <div class="detailTrans">
+                        <h4>Underground</h4>
+                        <p class="wow bounceInUp"><img src="images/transportation/underground.jpg" alt="Underground" /></p>
+                        <p>For most individual tourists, metro or Subway (Underground) is an irreplaceable option in the course of travel. Hence, we’d like to introduce you the Beijing Subway.</p>
+                        <p>Beijing, as the capital city, boasts well-developed subway network. As you can see, there are 19 subway lines network in Beijing covering the whole city. It can deliver you to any corner in Beijing. Line 1 is the first subway line in Beijing built in 1971. It passes through Tian’anmen Square, the sign and the center of Beijing.</p>
+                    </div>
+                          
+                    <div class="detailTrans">
+                        <h4>Bus</h4>
+                        <p class="wow bounceInUp"><img src="images/transportation/bus.jpg" alt="Bus" /></p>
+                        <p>Besides well-developed subway network, bus system also plays an important role in Beijing’s public transportation. Boasting 1020 lines, the bus system delivers over 950 million people every day.  Comparing to subway, it has a real long history. According to the data, the first bus line in Beijing was launched in August, 1935.</p>
+                        <p>Similar to the subway, any article that possibly poses threat to public security and operation safety of the bus is prohibited, such as inflammable and explosive articles, controlled knives. In addition, some articles are allowed to carry within limited amount, such as gas lighters less than two, alcohol within 100 ml etc.</p>
+                    </div>
+                          
+                    <div class="detailTrans">
+                        <h4>Bicycle</h4>
+                        <p class="wow bounceInUp"><img src="images/transportation/bicycle.jpg" alt="Bicycle" /></p>
+                        <p>Bicycle-riding has become very popular as more people pursue a healthy life. Hence, it is no wonder that Beijing boasts convenient bicycle services. The bicycle service scene in Beijing falls into two types, one being the shared-bicycle such as Mobike and Ofo etc, and the other one being  rentals of public bicycles managed by the municipal government.</p>
+                    </div>
+                          
+                    <div class="detailTrans">
+                        <h4>Train</h4>
+                        <p class="wow bounceInUp"><img src="images/transportation/railwaystation.jpg" alt="Train" /></p>
+                        <p>Beijing, the capital of China, is also the transportation hub. There are 5 railway stations in Beijing receiving visitors from all corners of the country. Three of these railway stations occupy irreplaceable position of public transportation of Beijing.</p>
+                        <p>China’s high speed railway network enjoys great reputation in the world. It’s an ideal option for short-distance tours for its high speed and punctuality. You can book tickets both on 12306.cn, the official website of Sino-rail Customer Service Center, or Ctrip, a Chinese provider of travel services. Your personal information including name, ID number, date of birth should be the same as it appears on your chosen ID, otherwise you will not be allowed to purchase the ticket.</p>
+                    </div>
+                          
+                    <div class="detailTrans">
+                        <h4>Airport</h4>
+                        <p class="wow bounceInUp"><img src="images/transportation/capitalairport.jpg" alt="Beijing Capital International Airport" /></p>
+                        <p>The Beijing Capital International Airport (ICAO: ZBAA, IATA:PEK) is located in Shunyi  District, northeast of Beijing. It has three terminals covering an area of 1.41 million square meters and three international standard runways. It is the busiest airport in China. It boasts 252 airlines and received over 943 million people and 606 thousand flights in 2016. It ranked top 10 of the most important airports in 2015.</p>
+                        <p>The Terminal 1 is the place where domestic flights depart from and arrive in while the Terminal 2 receives both domestic flights and international flights. And the Terminal 3 is same as Terminal 2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- TRANSPORTATION SECTION ENDS =============================== -->  
+        
+        <!-- CONTACT SECTION ====================================== -->
+        
+        <section id="contact">
+            <div class="container">
+                <h1 class="heading bold">CONTACT US</h1>
+                <div class="detailContainer">
+                    <div class="detailDiv">
+                        <h3 class="heading bold">ADDRESS</h3>
+                        <p>Minories Street, Aldgate, London</p>
+                        <div>
+                            <h4><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h4>
+                            <p><a href="mailto:lgz1009@sina.com">lgz1009@sina.com</a></p>
+                        </div>
+                        <div>
+                            <h4><i class="icon-map medium-icon wow bounceIn" data-wow-delay="0.6s"></i> TOURIST MAP</h4>
+                            <p><a href="data/BeijingTouristMap2014.pdf" target="_blank">Beijing Tourist Map</a></p>
+                        </div>
+                    </div>
+                    <div class="detailDiv">
+                        <form action="http://formspree.io/lgz1009@sina.com" method="post" class="wow fadeInUp" data-wow-delay="0.6s" id="messageform" name="messageform">
+                            <div class="wrapCtrl">
+                                <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                            </div>
+                            <div class="wrapCtrl">
+                                <input type="email" class="form-control" placeholder="Email" id="email"  name="email" required>
+                            </div>
+                            <div class="wrapCtrl">
+                                <textarea class="form-control" placeholder="Message" rows="7" id="message"  name="message" required></textarea>
+                            </div>
+                            <div class="wrapCtrl contentright">
+                                <input type="submit" class="form-control submitctrl" value="SEND MESSAGE">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CONTACT SECTION ENDS ================================= -->  
+        
+        <!-- FOOTER =============================================== -->
+        
+        <footer>
+            <div class="footer">
+                <p>&#169; 2017 VisitBeijing</p>
+            </div>
+        </footer>
+        
+        <!-- FOOTER ENDS ========================================== -->
+        
+        <!-- SCRIPTS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/myScript.js"></script>
+    </body>
+</html>
