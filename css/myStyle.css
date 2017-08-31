@@ -475,9 +475,6 @@ textarea.form-control {
     .slogan {
         padding: 100px 4vw 0 0;
     }
-    .worldattractionbtn {
-        margin-right: 4vw;
-    }
     .homebg {
         height: 100vh;
     }
@@ -501,9 +498,6 @@ textarea.form-control {
     .detailTrans {
         width: 46%;
     }
-    .homebg {
-        height: auto;
-    }
 }
 
 
@@ -526,9 +520,6 @@ textarea.form-control {
     }
     .detailTrans {
         width: 31%;
-    }
-    .homebg {
-        height: 100vh;  
     }
     .logo {
         width: 8%;
