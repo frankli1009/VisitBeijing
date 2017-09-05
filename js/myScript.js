@@ -16,6 +16,7 @@ var attractionImages = {
     imagesStartIndexes: [], // start index of image object of each figure
     rollOverInt: null,  // interval to roll over the images
     mouseoverImgId: "", // pause rolling over when mouse is over the image element 
+    imagePath: "images/attraction/",
     
     /* PURPOSE: cache the images to this.images array
        PARAMETERS:
@@ -32,7 +33,7 @@ var attractionImages = {
         }
         
         for(var i=0; i<this.imgCounts[curIndex]; i++) {
-            var sImageSrc = "../images/attraction/"+ attractionImages.imgFileNameRoots[curIndex] + 
+            var sImageSrc = this.imagePath+ attractionImages.imgFileNameRoots[curIndex] + 
                 (i > 0 ? i : "") + ".jpg";
 
             var imageIndex = this.imagesStartIndexes[curIndex] + i;
@@ -66,7 +67,7 @@ var attractionImages = {
         this.imgIndexes[i]++;
         if(this.imgIndexes[i] === this.imgCounts[i]) this.imgIndexes[i] = 0;
 
-        var sImageSrc = "../images/attraction/"+ this.imgFileNameRoots[i] + 
+        var sImageSrc = this.imagePath+ this.imgFileNameRoots[i] + 
             (this.imgIndexes[i] > 0 ? this.imgIndexes[i] : "") +
             ".jpg";
 
@@ -146,6 +147,10 @@ var attractionImages = {
     }
 }
 
+// get jquery window object for later multiple use
+
+var $window = $(window);
+
 // Ready event method on document object
 
 $(function() {
@@ -171,7 +176,9 @@ $(function() {
     parallaxHome();
     // auto highlight nav menu when scrolling
     highligthNavMenu();
-    $(window).trigger("scroll");
+    
+    // ctrl small screen not to shrink body width
+    setBodyMinWidth();
     
     // toggle navBtn
     $(".navBtn").on("click", function() {
@@ -282,10 +289,13 @@ function isSameDayInBeijing() {
 
 // highlight navMenu when scroll to relative part
 function highligthNavMenu() {
+    var swidth = screen.availWidth;
+    if(swidth < 1024) return; // nav button will show when screen width is smaller than 1024, so no need to process highlighting nav menu
+    
     // Cache selectors
     var lastId, 
         topMenu = $("#mainMenu"), 
-        topMenuHeight = topMenu.outerHeight()+230,
+        topMenuHeight = topMenu.outerHeight()+220,
         // All list items
         menuItems = topMenu.find("a"),
         // Anchors corresponding to menu items
@@ -306,7 +316,7 @@ function highligthNavMenu() {
     });
 
     // Bind to scroll
-    $(window).scroll(function(){
+    $window.scroll(function(){
         console.log($(".navBtn").is(":visible"));
         if($(".navBtn").is(":visible")) {
             console.log("navBtn");
@@ -333,6 +343,8 @@ function highligthNavMenu() {
                 .end().filter("[href=#"+id+"]").parent().addClass("active");
         }                   
     });
+    
+    $window.trigger("scroll");
 }
 
 // parallax home
@@ -350,3 +362,16 @@ function parallaxHome() {
     };
 };
 
+// set body min width
+
+function setBodyMinWidth() {
+    
+    $window.resize(function() {
+        var swidth = screen.availWidth;
+        if(swidth < 1024) {
+            $(".nav").css("max-width", swidth);
+        }
+    });
+    
+    $window.trigger("resize");
+}
