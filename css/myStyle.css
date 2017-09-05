@@ -483,6 +483,9 @@ textarea.form-control {
     .homebg {
         height: 100vh;
     }
+    .navBtn {
+        width: 15%;
+    }
 }
 
 /*---------------------------------------------------------------------
@@ -491,6 +494,9 @@ textarea.form-control {
 
 
 @media screen and (min-width: 768px) {
+    .navBtn {
+        width: 11%;
+    }
 	.detailContainer {
         column-count: 2;
     }
